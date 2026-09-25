@@ -4,6 +4,18 @@ Professor: Stanley Pieda
 Class: CST8002
 Due Date: Sep 25 2026
 IEEE References: 
+[1]
+J. Brown, “Git Branching and Merging: A Step-By-Step Guide,” Varonis.com, May 17, 2021. https://www.varonis.com/blog/git-branching-and-merging (accessed Sept. 25, 2026).
+
+
+[2]
+C. Schafer, “Python Tutorial: File Objects - Reading and Writing to Files,” YouTube. Apr. 29, 2016. Accessed: Sept. 25, 2026. [YouTube Video]. Available: https://www.youtube.com/watch?v=Uh2ebFW8OYM
+
+[3]
+GeeksforGeeks, “Python Docstrings,” GeeksforGeeks, June 2017. https://www.geeksforgeeks.org/python/python-docstrings/ (accessed Sept. 25, 2026).
+
+[4]
+GeeksforGeeks, “Reading CSV files in Python,” GeeksforGeeks, Dec. 16, 2019. https://www.geeksforgeeks.org/pandas/reading-csv-files-in-python/ (accessed Sept. 25, 2026).
 '''
 
 import csv
