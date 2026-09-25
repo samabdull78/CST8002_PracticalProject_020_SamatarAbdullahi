@@ -4,6 +4,7 @@ class lakerecord:
     """ Stores a singular data row from the lake peri file(csv) """
 
     def __init__(self,identification,lake_identification,year,species_code,species,percent_abundance):
+        """ Creates and allows program to use constructors """
         self.identification = identification
         self.lake_identification = lake_identification
         self.year = year
