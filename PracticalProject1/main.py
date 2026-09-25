@@ -1,4 +1,10 @@
-# Author: Samatar Abdullahi
+'''
+Author: Samatar Abdullahi
+Professor: Stanley Pieda
+Class: CST8002
+Due Date: Sep 25 2026
+IEEE References: 
+'''
 
 import csv
 from itertools import islice
