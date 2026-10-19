@@ -2,7 +2,10 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-# Add full IEEE references for resources you actually consulted.
+# [2] Python Software Foundation, "pathlib — Object-oriented filesystem paths,"
+#     Python documentation. [Online]. Available:
+#     https://docs.python.org/3/library/pathlib.html
+#     [Accessed: Oct. 18, 2026].
 
 from dataclasses import dataclass
 import math

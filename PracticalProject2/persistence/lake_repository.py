@@ -2,8 +2,10 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-# Add full IEEE references for resources you actually consulted.
-
+# [3] Python Software Foundation, "uuid — UUID objects according to RFC 9562,"
+#     Python documentation. [Online]. Available:
+#     https://docs.python.org/3/library/uuid.html
+#     [Accessed: Oct. 18, 2026].
 import csv
 from pathlib import Path
 from uuid import uuid4

@@ -2,14 +2,14 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-# Add full IEEE references for resources you actually consulted.
-
+#[5]R. Python, “Defining Main Functions in Python – Real Python,” realpython.com. 
+#   https://realpython.com/python-main-function/ 
+#       (accessed Oct. 18, 2026).
 import csv
 
 from model.record import LakeRecord
 
 
-# Replace with your exact full ACSIS name if different.
 STUDENT_NAME = "Samatar Abdullahi"
 
 
