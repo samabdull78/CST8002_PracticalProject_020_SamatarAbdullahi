@@ -2,7 +2,7 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-#[5]R. Python, “Defining Main Functions in Python – Real Python,” realpython.com. 
+#[5] R. Python, “Defining Main Functions in Python – Real Python,” realpython.com. 
 #   https://realpython.com/python-main-function/ 
 #       (accessed Oct. 18, 2026).
 import csv
@@ -25,7 +25,7 @@ class ConsoleView:
         print(f"\nProgram by {STUDENT_NAME}")
 
     def read_integer(self, prompt):
-        """Keep asking until the user enters an integer."""
+        """ Ask until the user enters an integer."""
         while True:
             try:
                 return int(input(prompt))
@@ -33,12 +33,11 @@ class ConsoleView:
                 print("Please enter a whole number.")
 
     def read_percentage(self):
-        """Keep asking until a valid percentage is entered."""
+        """ Ask until a valid percentage is entered."""
         while True:
             try:
                 value = float(input("Percent abundance (0-100): "))
 
-                # This comparison also rejects NaN and infinity.
                 if 0 <= value <= 100:
                     return value
 
@@ -47,7 +46,7 @@ class ConsoleView:
                 print("Please enter a number.")
 
     def read_text(self, prompt):
-        """Keep asking until nonempty text is entered."""
+        """ Ask until nonempty text is entered."""
         while True:
             value = input(prompt).strip()
 
@@ -57,7 +56,7 @@ class ConsoleView:
             print("This field cannot be empty.")
 
     def read_record(self, identification):
-        """Collect all other fields for a new or replacement record."""
+        """Get all other fields for a new or replacement record."""
         return LakeRecord(
             identification=identification,
             lake_identification=self.read_text(
@@ -155,10 +154,8 @@ class ConsoleView:
             identification = self.read_integer("Identification: ")
             record = self.service.get_one(identification)
             self.display_records([record])
-
         elif choice == "4":
             self.display_records(self.service.get_all())
-
         elif choice == "5":
             self.add_record()
 
@@ -195,6 +192,5 @@ class ConsoleView:
                 self.handle_choice(choice)
             except (OSError, ValueError, UnicodeError, csv.Error) as error:
                 print(f"Operation failed: {error}")
-
             self.show_name()
             input("\nPress Enter to return to the menu...")
