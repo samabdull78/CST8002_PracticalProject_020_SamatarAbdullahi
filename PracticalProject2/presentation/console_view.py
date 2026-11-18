@@ -95,6 +95,7 @@ class ConsoleView:
         print("5. Add a record")
         print("6. Edit a record")
         print("7. Delete a record")
+        print("7. Show all records")
         print("0. Exit")
 
     def add_record(self):
@@ -163,6 +164,9 @@ class ConsoleView:
             self.edit_record()
 
         elif choice == "7":
+            self.delete_record()
+
+        elif choice == "8":
             self.delete_record()
 
         else:
