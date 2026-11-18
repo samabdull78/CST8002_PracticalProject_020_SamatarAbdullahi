@@ -62,7 +62,6 @@ class LakeService:
     def update(self, identification, replacement):
         """Replace a selected record while keeping its identification."""
         replacement.validate()
-
         if replacement.identification != identification:
             raise ValueError(
                 "Identification cannot change during editing."

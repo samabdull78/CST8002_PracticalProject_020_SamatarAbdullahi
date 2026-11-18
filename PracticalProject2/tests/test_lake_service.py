@@ -2,7 +2,7 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-# [8] Python Software Foundation, "unittest — Unit testing framework,"
+# [6] Python Software Foundation, "unittest — Unit testing framework,"
 #     Python documentation. [Online]. Available:
 #     https://docs.python.org/3/library/unittest.html
 #     [Accessed: Oct. 18, 2026].

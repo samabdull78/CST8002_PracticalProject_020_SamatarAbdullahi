@@ -32,7 +32,6 @@ class LakeRepository:
 
         with open(filename, "r", encoding="cp1252", newline="") as file:
             reader = csv.DictReader(file)
-
             if reader.fieldnames != list(FIELDNAMES):
                 raise ValueError("The dataset column names are incorrect.")
 
