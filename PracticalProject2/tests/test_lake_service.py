@@ -60,6 +60,18 @@ class TestLakeService(unittest.TestCase):
 
         self.assertEqual(actual, expected)
 
+    def test_sort_uses_numeric_abundance_and_preserves_insertion_order(self):
+        """Checks the number position and then makes the program run in its original sequence"""
+        service = LakeService(None, Path("unused.csv"), Path("unused_exports"))
+        for identification, abundance in enumerate((10.0, 2.0, 2.0, 0.0), 1):
+            service.add(LakeRecord(identification, "TEST", 2026, "T", "Test", abundance))
+
+        ordered = service.get_sorted_by_percent_abundance()
+
+        self.assertEqual([record.identification for record in ordered], [4, 2, 3, 1])
+        self.assertEqual(
+            [record.identification for record in service.get_all()], [1, 2, 3, 4]
+        )
 
 if __name__ == "__main__":
     unittest.main()
