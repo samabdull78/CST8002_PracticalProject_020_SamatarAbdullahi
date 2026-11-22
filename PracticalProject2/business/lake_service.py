@@ -37,6 +37,10 @@ class LakeService:
         """Return a copy of the current record list."""
         return self.records.copy()
 
+        def get_sorted_percent_abundance(self):
+            """Returns values in ascending order of percent abundance"""
+            return sorted(self.records, key=lambda record: record.percent_abundance)
+
     def get_one(self, identification):
         """Return the matching record or raise an error."""
         for record in self.records:
