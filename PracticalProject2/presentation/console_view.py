@@ -95,7 +95,7 @@ class ConsoleView:
         print("5. Add a record")
         print("6. Edit a record")
         print("7. Delete a record")
-        print("7. Show all records")
+        print("9. Sorts percent abundance")
         print("0. Exit")
 
     def add_record(self):
@@ -167,7 +167,8 @@ class ConsoleView:
             self.delete_record()
 
         elif choice == "8":
-            self.delete_record()
+            print("Percent abundance (lowest to highest)")
+            self.display_records(self.service.get_sorted_by_percent_abundance())
 
         else:
             print("Please choose an option from 0 to 7.")
