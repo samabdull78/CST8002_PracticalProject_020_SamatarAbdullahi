@@ -21,8 +21,9 @@ DATASET_PATH = (
     / "vuntut_np_lake_periphyton_community_structure_2012_2016_data.csv"
 )
 
+"Path to the respected lake periphyton csv "
 OUTPUT_DIRECTORY = BASE_DIRECTORY / "exports"
-
+"Creates exports to significant directory/folder"
 
 def main():
     """Creates application components and starts the console."""
