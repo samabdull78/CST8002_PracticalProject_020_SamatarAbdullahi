@@ -2,10 +2,16 @@
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
 # Due date: Oct 18, 2026
-# [4] Python Software Foundation, "Data Structures,"
+# [7] Python Software Foundation, "Data Structures,"
 #     Python documentation. [Online]. Available:
 #     https://docs.python.org/3/tutorial/datastructures.html
 #     [Accessed: Oct. 18, 2026].
+#[8] Python Software Foundation, “uuid — UUID objects according to RFC 9562,” Python
+#     documentation. [Online]. Available: https://docs.python.org/3/library/uuid.html.
+#     [Accessed: Nov 15, 2026].
+# [9] Python Software Foundation, “Data Structures,” Python documentation. [Online].
+#     Available: https://docs.python.org/3/tutorial/datastructures.html. [Accessed: Nov 22, 2026].
+# [10]GeeksforGeeks, “Sorting Algorithms in Python,” GeeksforGeeks, Feb. 22, 2022. https://www.geeksforgeeks.org/python/sorting-algorithms-in-python/ (accessed Nov. 22, 2026).
 
 class LakeService:
     """Manage the in-memory list of lake records."""
@@ -37,19 +43,18 @@ class LakeService:
         """Return a copy of the current record list."""
         return self.records.copy()
 
-        def get_sorted_percent_abundance(self):
-            """Returns values in ascending order of percent abundance"""
-            return sorted(self.records, key=lambda record: record.percent_abundance)
-
     def get_one(self, identification):
         """Return the matching record or raise an error."""
         for record in self.records:
             if record.identification == identification:
                 return record
-
         raise ValueError(
             f"No record has identification {identification}."
         )
+
+    def get_sorted_by_percent_abundance(self):
+        """Returns values in ascending order of percent abundance"""
+        return sorted(self.records, key=lambda record: record.percent_abundance)
 
     def add(self, record):
         """Validate and append a record with a unique identification."""

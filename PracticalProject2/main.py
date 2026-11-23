@@ -1,11 +1,17 @@
 # Author: Samatar Abdullahi
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
-# Due date: Oct 18, 2026
-# [1] Python Software Foundation, "pathlib — Object-oriented filesystem paths,"
+# Due date: Nov 22, 2026
+# [3] Python Software Foundation, "pathlib — Object-oriented filesystem paths,"
 #     Python documentation. [Online]. Available:
 #     https://docs.python.org/3/library/pathlib.html
 #     [Accessed: Oct. 18, 2026].
+# [4] Python Software Foundation, “Data Structures,” Python documentation. [Online].
+#     Available: https://docs.python.org/3/tutorial/datastructures.html. [Accessed: Oct.
+#     18, 2026].
+# [5] Real Python, “Defining Main Functions in Python.” [Online]. Available:
+#     https://realpython.com/python-main-function/. [Accessed: Oct. 18, 2026].
+# [6]“Git Cheat Sheet,” Git-scm.com, 2025. https://git-scm.com/cheat-sheet (accessed Nov. 22, 2026).
 
 from pathlib import Path
 

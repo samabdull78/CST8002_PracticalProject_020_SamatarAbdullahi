@@ -1,10 +1,11 @@
 # Author: Samatar Abdullahi
 # Course: CST8002 Programming Language Research Project
 # Professor: Stanley Pieda
-# Due date: Oct 18, 2026
-#[5] R. Python, “Defining Main Functions in Python – Real Python,” realpython.com. 
+# Due date: Nov 22, 2026
+#[1] R. Python, “Defining Main Functions in Python – Real Python,” realpython.com. 
 #   https://realpython.com/python-main-function/ 
 #       (accessed Oct. 18, 2026).
+# [2]Wikiversity, “Python Concepts/Console Output,” Wikiversity, Sept. 24, 2020. https://en.wikiversity.org/wiki/Python_Concepts/Console_Output (accessed Nov. 22, 2026).
 import csv
 
 from model.record import LakeRecord
@@ -95,7 +96,7 @@ class ConsoleView:
         print("5. Add a record")
         print("6. Edit a record")
         print("7. Delete a record")
-        print("9. Sorts percent abundance")
+        print("8. Sorts percent abundance")
         print("0. Exit")
 
     def add_record(self):
@@ -171,7 +172,7 @@ class ConsoleView:
             self.display_records(self.service.get_sorted_by_percent_abundance())
 
         else:
-            print("Please choose an option from 0 to 7.")
+            print("Please choose an option from 0 to 8.")
 
     def run(self):
         """Load initial data and run the interactive menu."""
